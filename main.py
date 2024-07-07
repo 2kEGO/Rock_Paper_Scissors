@@ -5,7 +5,8 @@ def base():
 
     compute =  t[randint(0,2)]
 
-    user_input = input(str('Enter your choice'))
+    user_input = input(str('Choose Rock, Paper or Scissors: '))
+    user_input = user_input.lower
 
     if user_input not in t:
         print('Wrong answer')
